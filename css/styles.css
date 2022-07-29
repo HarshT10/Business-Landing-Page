@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBFBFB;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.content-container {
+    margin: 0 15%;
+}
+
+/* Header */
+
+header {
+    background-color: #636C79;
+    padding-bottom: 5%;
+}
+
+.navbar {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Header Logo */
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-logo .brand-logo {
+    width: 140px;
+}
+
+/* Header Lists */
+
+nav .lists {
+    list-style: none;
+}
+
+.lists .list-item {
+    display: inline-block;
+}
+
+.lists .subscribe {
+    padding-right: 50px;
+}
+
+.lists .list-item .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 25px;
+    transition: .2s ease;
+}
+
+.lists .list-item .nav-link:hover {
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0 0 6px -1px #000000;
+}
+
+/* Header Button */
+
+.button-wrapper .nav-btn {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #a3a3a3;
+    padding: 13px 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .2s ease;
+}
+
+.button-wrapper .nav-btn:hover {
+    background-color: #ffffff;
+    color: #a3a3a3;
+    box-shadow: 0 0 6px -1px #000000;
+}
+
+/* Header Intro Section */
+
+.intro-section {
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+}
+
+/* Intro Left Content */
+
+.left-content .intro-image {
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    background-image: url('../images/pexels-fauxels-3183197.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-content {
+    width: 50%;
+}
+
+/* Intro Right Content */
+
+.right-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content .text-content h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+
+.right-content .text-content p {
+    color: #D8DADD;
+    font-weight: 300;
+    line-height: 2;
+    font-size: 1.3rem;
+    margin: 5% 0;
+}
+
+.text-content form {
+    position: relative;
+}
+
+.text-content .input-email {
+    width: 100%;
+    height: 70px;
+    padding: 0 50px;
+    border: none;
+    font-size: 1.1rem;
+    color: #1B1D21;
+}
+
+.text-content .input-email::placeholder {
+    font-size: 1.1rem;
+    color: #a3a3a3;
+}
+
+.text-content .email-logo {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    color: #1B1D21;
+    font-size: 1.1rem;
+}
+
+.text-content .button-wrapper{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+}
+
+.intro-btn {
+    border: none;
+    background-color: #8BB7A2;
+    color: #ffffff;
+    padding: 18px 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.intro-btn:hover {
+    background-color: #6daf8f;
+}
+
+/* About Us Section 1*/
+
+.about-us-1 {
+    padding: 7% 0;
+}
+
+/* Heading */
+
+.heading h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1B1D21;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5%;
+}
+
+/* Stats */
+
+.about-us-1 .stats {
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+
+.about-us-1 .stats h4 {
+    font-size: 2.5rem;
+}
+
+.about-us-1 .stats p {
+    margin-top: 8%;
+    color: #474747;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Image */
+
+.about-us-1 .work-image {
+    margin-top: 6%;
+    background-color: green;
+    height: 650px;
+    background-image: url('../images/pexels-fauxels-3184325.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.about-us-1 .work-image .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #8BB7A2;
+    font-size: 1.4rem;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.about-us-1 .work-image .circle-1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-us-1 .work-image .circle-2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-us-1 .work-image .circle-3 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in-out;
+}
+
+/* About Us 2,3,4 */
+
+.row-1, .row-2, .row-3{
+    padding-top: 2%;
+}
+
+.col-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.col-1-text h2{
+    font-size: 2.7rem;
+    color: #1B1D21;
+    font-family: 'Raleway', sans-serif;
+}
+
+.col-1-text p{
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1.3rem;
+    color: #474747;
+    margin: 5% 0;
+}
+
+/* About Us Section 2 */
+
+.about-us .female-image{
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/pexels-fauxels-3184405.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* About Us Section 3 */
+
+.row-2 .col-1{
+    order: 1;
+}
+
+.row-2 .col-2{
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/pexels-fauxels-3184603.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* About Us Section 3 */
+
+.row-3 .col-2{
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/pexels-linkedin-sales-navigator-2182969.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Agents */
+
+.agents{
+    margin: 15% 0;
+}
+
+.agents .text-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agents .text-content h2{
+    font-size: 2.7rem;
+    color: #1B1D21;
+    font-family: 'Raleway', sans-serif;
+}
+
+.agents .text-content p{
+    width: 50%;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+/* Cards */
+
+.card-wrapper{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card images */
+
+.card .image-1{
+    width: 350px;
+    height: 450px;
+    background-image: url('../images/pexels-mikhail-nilov-8937870.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .image-2{
+    width: 350px;
+    height: 450px;
+    background-image: url('../images/pexels-precious-judah-9154594.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .image-3{
+    width: 350px;
+    height: 450px;
+    background-image: url('../images/pexels-christina-morillo-1181424.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Card text */
+
+.card h3{
+    margin: 5% 0;
+    font-family: 'Raleway', sans-serif;
+    color: #1B1D21;
+    font-weight: 800;
+}
+
+.card p{
+    color: #474747;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.agents-btn{
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Footer */
+
+footer{
+    padding-bottom: 5%;
+    background-color: #10181D;
+}
+
+/* Footer Top */
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 10rem;
+}
+
+.footer-top .footer-logo{
+    width: 80%;
+}
+
+.media-icons a{
+    text-decoration: none;
+}
+
+.media-icons .media-icon{
+    padding: 0 10px;
+    height: 55px;
+}
+
+.media-icons .github{
+    padding-right: 0;
+}
+
+.footer-top::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: rgb(255, 255, 255, .3);
+    position: absolute;
+    bottom: 0;
+}
+
+/* Footer Bottom */
+
+.footer-bottom{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-lists{
+    list-style: none;
+}
+
+.footer-lists .list-item{
+    padding: 15px 0;
+}
+
+.footer-lists .list-heading{
+    padding-bottom: 15px;
+}
+
+.footer-lists .list-heading .list-header{
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-lists .list-item a{
+    text-decoration: none;
+    color: #bebebe;
+    font-size: 1rem;
+}
