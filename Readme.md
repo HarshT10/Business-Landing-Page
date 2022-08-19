@@ -1,6 +1,6 @@
 # **Project 12 - Business Landing Page**
 
-- This project is a landing page for businesses. 
+- This project is a landing page for businesses. It is Fully Responsive.
 
 [Netlify](https://business-landing-page-harshcodes.netlify.app/)
 
